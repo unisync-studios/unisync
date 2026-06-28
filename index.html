@@ -32,13 +32,12 @@
     <!-- Decorative Background Glows -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] pointer-events-none overflow-hidden z-0">
         <div class="absolute -top-[250px] left-1/4 w-[600px] h-[600px] bg-purple-600/10 rounded-full filter blur-[120px] animate-pulse"></div>
-        <div class="absolute -top-[200px] right-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full filter blur-[100px] animation-delay-2000"></div>
+        <div class="absolute -top-[200px] right-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full filter blur-[100px]"></div>
     </div>
 
     <!-- Navigation Header -->
     <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
         <div class="flex items-center gap-3">
-            <!-- EMBEDDED LOGO IMAGE -->
             <img src="unisync.png" alt="UniSync Logo" class="h-9 w-9 object-contain rounded-xl drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">
             <span class="heading-font font-bold text-xl tracking-wider text-white">UniSync</span>
         </div>
@@ -50,7 +49,7 @@
     </header>
 
     <!-- Hero Section -->
-    <main class="w-full max-w-6xl mx-auto px-6 pt-16 pb-24 relative z-10 flex flex-col items-center text-center">
+    <main class="w-full max-w-6xl mx-auto px-6 pt-16 pb-12 relative z-10 flex flex-col items-center text-center">
         
         <!-- Premium Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-purple-500/30 text-xs font-medium mb-8">
@@ -69,14 +68,53 @@
         </p>
 
         <!-- CTA Action Download Button -->
-        <div class="w-full flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!-- OFFICIAL TRACKING LINK FULLY PASTED HERE -->
+        <div class="w-full flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
             <a href="https://github.com/unisync-studios/unisync/releases/download/v1.0.0/app-release.apk" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.3)] hover:shadow-[0_0_35px_rgba(168,85,247,0.5)] transition-all duration-300 text-center transform hover:-translate-y-0.5">
                 Download UniSync APK
             </a>
-            <a href="https://github.com/unisync-studios/unisync" target="_blank" class="w-full sm:w-auto px-8 py-4 glass-panel hover:bg-white/5 text-slate-300 hover:text-white font-medium rounded-2xl transition-all duration-300 text-center">
-                View Source Code
-            </a>
+            <!-- Keep this out for now since your repo is private; you can add it back later! -->
+        </div>
+
+        <!-- Description Cards Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full text-left mb-20">
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                <div class="w-10 h-10 rounded-xl bg-purple-600/20 flex items-center justify-center text-purple-400 mb-6 font-bold">⚡</div>
+                <h3 class="heading-font text-xl font-bold text-white mb-3">Gamified Streaks</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Keep your attendance high and build consistent college habits. Turn regular class tracking into an addictive daily routine.</p>
+            </div>
+
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600/20 flex items-center justify-center text-indigo-400 mb-6 font-bold">📊</div>
+                <h3 class="heading-font text-xl font-bold text-white mb-3">AI Timetable Scan</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Take a photo of your college timetable and let our integrated Gemini AI handle the scheduling engine flawlessly.</p>
+            </div>
+
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                <div class="w-10 h-10 rounded-xl bg-pink-600/20 flex items-center justify-center text-pink-400 mb-6 font-bold">🔒</div>
+                <h3 class="heading-font text-xl font-bold text-white mb-3">Cloud Realtime Sync</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Powered securely by a Firebase backend. Your attendance charts, schedule data, and logs are backed up instantly.</p>
+            </div>
+        </div>
+
+        <!-- How To Install Guide Section -->
+        <div class="w-full max-w-3xl glass-panel p-8 md:p-10 rounded-3xl text-left border border-white/5">
+            <h2 class="heading-font text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="text-purple-400">•</span> How to install UniSync on your phone
+            </h2>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-purple-600/30 text-purple-300 flex items-center justify-center text-xs font-bold mt-0.5">1</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">Tap the <strong>Download UniSync APK</strong> button above directly on your Android mobile device.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-purple-600/30 text-purple-300 flex items-center justify-center text-xs font-bold mt-0.5">2</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">Open the downloaded file. If your mobile browser prompts you for permission to install apps from unknown sources, tap <strong>Settings</strong> and switch it on.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-purple-600/30 text-purple-300 flex items-center justify-center text-xs font-bold mt-0.5">3</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">Tap <strong>Install</strong>, log in with your account, and take control of your college semester attendance streaks!</p>
+                </div>
+            </div>
         </div>
 
     </main>
